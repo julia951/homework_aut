@@ -26,23 +26,6 @@ public class SeleniumDemo {
         WebElement buttn = driver.findElement(By.name("submitLogin"));
         buttn.click();
 
-//        try {
-//            Thread.sleep(1000);
-//        } catch (InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub1 = driver.findElement(By.id("subtab-AdminParentOrders"));
-//        sub1.click();
-//
-//        String title = driver.getTitle();
-//
-//        System.out.println("" + driver.getTitle());
-//        driver.navigate().refresh();
-//
-//        String title2 = driver.getTitle();
-//        if (title == title) {
-//            System.out.println("ok!");
-//        }
         Test(driver,"Заказы");
         Test(driver,"Каталог");
         Test(driver,"Клиенты");
@@ -78,68 +61,4 @@ public static void Test(WebDriver driver,String title_text)
         System.out.println("The user is still on the same page");
     }
 }
-
-//        try {
-//            Thread.sleep(1000);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub6 = driver.findElement(By.linkText("Modules"));
-//        sub6.click();
-//        System.out.println(""+driver.getTitle());
-//
-//        try {
-//            Thread.sleep(500);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub7 = driver.findElement(By.linkText("Design"));
-//        sub7.click();
-//        System.out.println(""+driver.getTitle());
-//
-//        try {
-//            Thread.sleep(400);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub8 = driver.findElement(By.linkText("Доставка"));
-//        sub8.click();
-//        System.out.println(""+driver.getTitle());
-//
-//        try {
-//            Thread.sleep(500);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub9 = driver.findElement(By.linkText("Способ оплаты"));
-//        sub9.click();
-//        System.out.println(""+driver.getTitle());
-//
-//        try {
-//            Thread.sleep(500);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub10 = driver.findElement(By.linkText("International"));
-//        sub10.click();
-//        System.out.println(""+driver.getTitle());
-//
-//        try {
-//            Thread.sleep(500);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub11 = driver.findElement(By.linkText("Shop Parameters"));
-//        sub11.click();
-//        System.out.println(""+driver.getTitle());
-//
-//        try {
-//            Thread.sleep(500);
-//        } catch(InterruptedException e) {
-//            System.out.println("got interrupted!");
-//        }
-//        WebElement sub12 = driver.findElement(By.linkText("Конфигурация"));
-//        sub12.click();
-//        System.out.println(""+driver.getTitle());
-//
 }
