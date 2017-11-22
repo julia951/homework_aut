@@ -14,7 +14,7 @@ public class SeleniumDemo {
         String property = System.getProperty("user.dir") + "/driver/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", property);
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = initWebDriver();
         driver.get("http://prestashop-automation.qatestlab.com.ua/admin147ajyvk0/");
 
         ScriptA.Login(driver,"email","passwd" ,"webinar.test@gmail.com", "Xcg7299bnSmMuRLp9ITw","submitLogin" );
@@ -34,4 +34,11 @@ public class SeleniumDemo {
 
         driver.quit();
     }
+    public static WebDriver initWebDriver(){
+        String property = System.getProperty("user.dir") + "/driver/chromedriver.exe";
+        System.setProperty("webdriver.chrome.driver", property);
+
+        return new ChromeDriver();
+    }
+
 }
